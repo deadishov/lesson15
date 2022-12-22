@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         }
     };
 
-    DomElement.prototype.newElem = function () {
+    DomElement.prototype.myFunc = function () {
         let elem;
 
         if (this.selector[0] === '.') {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         position: 'absolute'
     });
 
-    document.body.appendChild(square.newElem());
+    document.body.appendChild(square.myFunc());
 
     document.addEventListener('keydown', (event) => {
         const div = document.querySelector('div');
