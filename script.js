@@ -56,7 +56,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     let square = new DomElement({
-        position: 'absolute'
+        position: 'absolute',
+        width: '100px',
+        height: '100px',
+        background: 'red',
     });
 
     document.body.appendChild(square.myFunc());
